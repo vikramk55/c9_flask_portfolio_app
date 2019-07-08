@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = name = "likes to eat strawberry"
+	new_name = name + "likes to eat strawberry"
 	return render_template('index.html', name=new_name)
 
 
